@@ -101,3 +101,20 @@ li::marker {
 .page2 {
     background-color: #212120;
 }
+
+.titelafvalcontrole{
+    padding-left: 3%;
+    font-size: 3rem;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.introafvalcontrole{
+    padding: 20%;
+    padding-top: 10%;
+    line-height: 1.2rem;
+}
+
+.controle{
+    background-color: #f3ad3c;
+}
