@@ -118,8 +118,9 @@ li::marker {
 .controle{
     background-color: #f3ad3c;
     color: white;
-    font-size: 2rem;
-    margin-left: 15%;
-    margin-right: 15%;
+    font-size: 2.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
     border-radius: 20px;
+    text-decoration: none;
 }
