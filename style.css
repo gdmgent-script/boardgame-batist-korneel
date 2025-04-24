@@ -88,11 +88,14 @@ li::marker {
     color: #f3ad3c;
   }
 
-.navigatiescherm {
+.navigatiescherm a{
     color: white;
-    padding-top: 70%;
     font-size: 1.5rem;
     text-decoration: underline dotted white;
+}
+
+.navigatiescherm{
+    padding-top: 50%;
 }
 
 .page2 {
