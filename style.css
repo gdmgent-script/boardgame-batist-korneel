@@ -67,6 +67,9 @@ img {
     padding: 0.25rem 1rem 0.25rem 1rem;
     display: inline-block;
     margin-bottom: 1rem;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 300;
 }
 
 .icoon_illustratie_vuilbak {
