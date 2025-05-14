@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controleer Je Antwoord</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wju0vhr.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -46,14 +48,14 @@
         .title {
             text-align: center;
             font-size: 32px;
-            font-weight: bold;
+            font-style: italic;
             margin: 20px 20px 50px 20px;
         }
         
         .circle-container {
             display: flex;
             justify-content: center;
-            margin: 30px 0;
+            margin: 15px 0;
         }
         
         .circle {
@@ -99,9 +101,9 @@
         
         .error-heading {
             color: #d15e45;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 7px;
         }
         
         .error-text {
@@ -111,28 +113,26 @@
         }
         
         .instruction {
-            color: #666;
-            font-size: 28px;
+            color: black;
+            font-size: 25px;
             text-align: center;
             padding: 0 30px;
-            line-height: 1.3;
+            line-height: 1;
         }
+
+
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="back-button">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2" fill="none"/>
-                <path d="M13.5 8.5L9.5 12L13.5 15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
-        <div class="menu-button">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-        </div>
-    </div>
+    
+    <nav>
+        <a href="quiz-vragen.html">
+            <img src="images/backbutton.png" alt="navigatie illustratie">
+        </a>
+        <a href="navigatie.html">
+            <img src="images/hamburger.png" alt="navigatie illustratie">
+        </a>
+    </nav>
     
     <div class="title">
         CONTROLEER<br> JE ANTWOORD
