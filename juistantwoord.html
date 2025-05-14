@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controleer Je Antwoord</title>
+    <title>Controleer Je Antwoord - Correct</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,37 +59,34 @@
         .circle {
             width: 180px;
             height: 180px;
-            border: 8px solid #d15e45;
+            border: 8px solid #7cb06c;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         
-        .x-mark {
+        .checkmark {
             width: 100px;
             height: 100px;
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
-        .x-mark:before,
-        .x-mark:after {
+        .checkmark:before {
             content: '';
             position: absolute;
-            width: 100%;
-            height: 18px;
-            background-color: #d15e45;
-            border-radius: 9px;
-            top: 50%;
-            left: 0;
-        }
-        
-        .x-mark:before {
-            transform: translateY(-50%) rotate(45deg);
-        }
-        
-        .x-mark:after {
-            transform: translateY(-50%) rotate(-45deg);
+            width: 40px;
+            height: 80px;
+            border-radius: 8px;
+            border-right: 18px solid #7cb06c;
+            border-bottom: 18px solid #7cb06c;
+            border-left: 0;
+            border-top: 0;
+            transform: rotate(45deg);
+            top: -5px;
         }
         
         .message {
@@ -97,15 +94,15 @@
             margin-top: 50px;
         }
         
-        .error-heading {
-            color: #d15e45;
+        .success-heading {
+            color: #7cb06c;
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 10px;
         }
         
-        .error-text {
-            color: #d15e45;
+        .success-text {
+            color: #7cb06c;
             font-size: 20px;
             margin-bottom: 30px;
         }
@@ -140,17 +137,17 @@
     
     <div class="circle-container">
         <div class="circle">
-            <div class="x-mark"></div>
+            <div class="checkmark"></div>
         </div>
     </div>
     
     <div class="message">
-        <div class="error-heading">HELAAS!</div>
-        <div class="error-text">Je antwoord is fout.</div>
+        <div class="success-heading">HOERA!</div>
+        <div class="success-text">Je antwoord is juist.</div>
     </div>
     
     <div class="instruction">
-        Je moet een extra afvalkaart pakken
+        Je mag jouw afvalkaart onderaan de afvalstapel leggen
     </div>
 </body>
 </html>
