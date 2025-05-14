@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Question Quiz</title>
+    <title>Beantwoord de quiz-vraag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wju0vhr.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'aktiv-grotesk';
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: white;
         }
         .quiz-container {
             background-color: white;
@@ -44,7 +46,7 @@
             background-color: #f0f0f0;
         }
         .selected {
-            border-color: #3498db;
+            border-color: #f3ad3c;
             background-color: #ebf5fb;
         }
         .correct {
@@ -60,7 +62,7 @@
             width: 100%;
             padding: 12px;
             margin-top: 20px;
-            background-color: #3498db;
+            background-color: #f3ad3c;
             color: white;
             border: none;
             border-radius: 5px;
@@ -96,6 +98,13 @@
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="navigatie.html">
+            <img src="images/hamburger.png" alt="navigatie illustratie">
+        </a>
+    </nav>
+
     <div class="quiz-container">
         <h1>Random Question Quiz</h1>
         <div class="question" id="question">Question will appear here</div>
