@@ -43,11 +43,12 @@
         }
         
         .option {
-            padding: 12px 15px;
+            padding: 6px 7px;
             border: 2px solid #ddd;
             border-radius: 5px;
             cursor: pointer;
             transition: all 0.3s ease;
+            line-height: 1.3;
         }
         
         .option:hover {
@@ -69,7 +70,8 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 25px;
+            font-style: italic;
             transition: background-color 0.3s;
         }
         
@@ -112,31 +114,44 @@
     <script>
         // Quiz questions data
         const questions = [
+            
             {
-                question: "Wat is de hoofdstad van Nederland?",
-                options: ["Rotterdam", "Den Haag", "Amsterdam", "Utrecht"],
-                answer: "Amsterdam"
+                question: "",
+                options: [  "",
+                            "",
+                            ""],
+                answer: ""
+            },
+        
+            {
+                question: "Oei, mijn fietsband is kapot. Wat doe ik met mijn oude buitenband?",
+                options: [  "Ik geef deze mee met het brandbaar grofafval",
+                            "Ik breng deze terug naar de fietsenmaker.",
+                            "Ik gooi deze in bij het restafval"],
+                answer: "Ik geef deze mee met het brandbaar grofafval"
             },
             {
-                question: "Hoeveel provincies heeft Nederland?",
-                options: ["10", "12", "14", "16"],
-                answer: "12"
+                question: "Ik heb nood aan een nieuwe latte bodem, wat doe ik met de oude?",
+                options: [  "Ik zaag deze in stukken en verbrand ze in mijn stoof.",
+                            "Ik leg ze ergens op straat en zorg dat niemand me ziet.",
+                            "Ik bel ivago en geef de latte bodem mee aan het grofafval."],
+                answer: "Ik bel ivago en geef de latte bodem mee aan het grofafval."
             },
             {
-                question: "Welk afval hoort in de papierbak?",
-                options: ["Plastic verpakkingen", "Kranten", "Blikjes", "Etensresten"],
-                answer: "Kranten"
+                question: "Wat is de juiste plaats voor lege spuitbussen van deodorant?",
+                options: [  "PMD-zak",
+                            "Restafval",
+                            "Glascontainer"],
+                answer: "PMD-zak"
             },
             {
-                question: "Welk afval is gevaarlijk?",
-                options: ["Verfblikken", "Plastic flessen", "Kartonnen dozen", "Papieren zakken"],
-                answer: "Verfblikken"
+                question: "Mag een lege pizzadoos bij het papier en karton?",
+                options: [  "Ja, altijd",
+                            "Alleen als er geen vet of etensresten aanhangen",
+                            "Nee, nooit"],
+                answer: "Alleen als er geen vet of etensresten aanhangen"
             },
-            {
-                question: "Wat wordt gemaakt van gerecycled glas?",
-                options: ["Nieuwe plastics", "Nieuwe glazen flessen", "Bouwmateriaal", "Papier"],
-                answer: "Nieuwe glazen flessen"
-            }
+
         ];
 
         // DOM elements
