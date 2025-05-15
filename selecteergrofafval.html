@@ -10,8 +10,66 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/wju0vhr.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.723);
+        }
+
+        header::after {
+            content: "";
+            display: block;
+            width: 100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.723);
+            position: absolute;
+            top: 80vh;;
+            height: 20vh;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-style: italic;
+            margin: 20px;
+            text-align: left;
+            font-weight: normal;
+            color: white;
+        }
+
+        nav a {
+            width: auto;
+        }
+
+        nav a img {
+            width: 60px;
+            height: 40px;
+            display: block;            max-width: unset !important;
+        }
+
+    </style>
 </head>
 <body>
+
+    <header>
+        <h3>
+                    SCAN <br> JOUW <br> AFVALKAART
+        </h3>
+
+        <nav>
+            <a href="navigatie.html">
+                <img src="images/hamburger.png" alt="navigatie illustratie">
+            </a>
+        </nav>
+    </header>
+
 
     <a-scene
     mindar-image="imageTargetSrc: ./targets/target-temp2.mind;"
