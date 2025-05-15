@@ -8,7 +8,8 @@ nav a {
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     width: 100%;
     padding: 1rem
 }
